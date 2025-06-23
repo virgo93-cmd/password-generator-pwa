@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Reset dan box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', monospace, monospace;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #00ffa3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+.container {
+  background: rgba(10, 10, 10, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffa3cc;
+  padding: 2rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  user-select: none;
+  overflow-wrap: break-word; /* break teks panjang */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffa3;
+  text-shadow: 0 0 8px #00ffa3;
+}
+
+label {
+  display: block;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 0.3rem;
+  accent-color: #00ffa3;
+  cursor: pointer;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #00ffa3cc;
+  transition: color 0.3s;
+}
+
+.checkboxes label:hover {
+  color: #00ffae;
+}
+
+button {
+  margin-top: 1.8rem;
+  width: 100%;
+  padding: 0.85rem;
+  background: #00ffa3;
+  border: none;
+  border-radius: 8px;
+  color: #041914;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px #00ffa3;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #00ffae;
+  box-shadow: 0 0 18px #00ffae;
+}
+
+textarea {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 80px;
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #041914;
+  color: #00ffa3;
+  box-shadow: 0 0 10px #00ffa3aa inset;
+  resize: none;
+  user-select: all;
+  overflow-wrap: break-word;
+}
+
+.strength {
+  margin-top: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #00ffa3;
+  text-shadow: 0 0 6px #00ffa3;
+}
+
+.strength-veryweak {
+  color: #ff3864;
+  text-shadow: 0 0 8px #ff3864;
+}
+
+.strength-weak {
+  color: #ff6f59;
+  text-shadow: 0 0 8px #ff6f59;
+}
+
+.strength-medium {
+  color: #ffd86f;
+  text-shadow: 0 0 8px #ffd86f;
+}
+
+.strength-strong {
+  color: #6fff8c;
+  text-shadow: 0 0 8px #6fff8c;
+}
+
+.strength-verystrong {
+  color: #00ffa3;
+  text-shadow: 0 0 10px #00ffa3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+  
+  .container {
+    padding: 1.5rem 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px #00ffa3cc;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  textarea {
+    height: 70px;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+  
+  .checkboxes label {
+    font-size: 0.9rem;
+  }
+}
